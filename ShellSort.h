@@ -15,10 +15,10 @@ public:
         for(int i = size/2; i > 0; i/=2){
             for (int j = i; j < size; j++) {
                 for (int k = j-i; k >= 0; k -= i) {
-                    if(*(array.begin()+k+i) >= *(array.begin()+k))
-                           break;
-                    else{
+                    if(*(array.begin()+k) >= *(array.begin()+k+i))
                         swap(*(array.begin()+k),*(array.begin()+k+i));
+                    else{
+                        break;
                     }
                 }
             }
