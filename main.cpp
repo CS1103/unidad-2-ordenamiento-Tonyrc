@@ -9,12 +9,14 @@ using namespace std;
 
 int main()
 {
-    deque<double> array={1,5,10,15,3,4,7};
+    deque<int> array={1,5,10,15,3,4,7};
     vector<int> array2={9,8,7,6,2,1,4};
     vector<int> array3={15,14,13,12,11,10,9,8,7,6,5,4,3,2,1};
+    deque<int> array4={19,17,15,12,14,8,4,7,2,1};
     MergeSort A;
     ShellSort B;
     QuickSort C;
+    HeapSort D;
 
     A.imprimir(array);
     A.mergesort(array,array.begin(),array.end()-1);
@@ -31,5 +33,11 @@ int main()
     C.imprimir(array3);
     C.quicksort(array3,array3.begin(),array3.end()-1);
     C.imprimir(array3);
+
+    cout<<"\n";
+
+    D.imprimir(array4);
+    D.heapsort(array4);
+    D.imprimir(array4);
 
 }
