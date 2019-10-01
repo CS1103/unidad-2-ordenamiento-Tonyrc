@@ -8,6 +8,16 @@
 
 class QuickSort {
 
+
+
+    template<typename Container>
+    void imprimir(Container &array){
+        for(auto i:array){
+            std::cout<<i<<" ";
+        }
+        std::cout<<"\n";
+    }
+
 };
 
 
